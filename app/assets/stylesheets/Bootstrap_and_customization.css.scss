@@ -1,6 +1,14 @@
+@import url(http://www.dafont.com/gitchgitch.font);
+
 $body-bg:  #ecf0f1;
-$navbar-default-bg: #c0392b;
-$navbar-default-link-color: White;
+$font-family-sans-serif: gitchgitch;
+$navbar-default-link-color: #c0392b;
 $btn-primary-bg: #c0392b;
+$jumbotron-heading-color: #c0392b;
+$text-color: #c0392b;
 
 @import "bootstrap";
+
+.left {
+	text-align:left;
+}
