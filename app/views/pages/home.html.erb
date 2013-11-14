@@ -1,8 +1,13 @@
 <div class="jumbotron left">
-<h1>Welcome Frendorsed!</h1>
-<p>Where you go to find services you need, from friends you trust!
-</p>
-	<%= link_to "Log In", "#",class: "btn btn-primary" %>
-	<%= link_to "Sign Up", "#",class: "btn btn-primary" %>
-</div>
+	<h1>Welcome to Frendorsed!</h1>
+	
+	<% if user_signed_in? %>
+		# do something
+	<% else %>
+		<p>
+         <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+         <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+       </p>
+ 	 <% end %>  
+
 	</div>
