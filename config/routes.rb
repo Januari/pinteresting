@@ -1,5 +1,5 @@
 Pinteresting::Application.routes.draw do
-  resources :pinnings
+  resources :pins
 
    devise_for :users
   root "pages#home"
